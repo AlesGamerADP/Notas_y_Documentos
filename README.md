@@ -55,25 +55,31 @@ python manage.py runserver
 
 Las rutas de la API están definidas en el archivo crud/urls.py. Estas rutas permiten interactuar con las personas mediante las siguientes operaciones:
 
-+ Pagina de Inicio de Api Root : http://127.0.0.1:8000/
++ Pagina de Inicio de Api Root : http://127.0.0.1:8000/api/
 
-+ Crear una persona: POST /api/persona/create/
++ ViewSet de notas : http://127.0.0.1:8000/api/notas/
 
-+ Obtener detalles de una persona: GET /api/persona/{id}/
++ ViewSet de documentos : http://127.0.0.1:8000/api/documentos/
+ 
++ ViewSet de carpetas : http://127.0.0.1:8000/api/carpetas/
 
-+ Actualizar una persona: PUT /api/persona/update/{id}/
++ ViewSet de etiquetas : http://127.0.0.1:8000/api/etiquetas/
 
-+ Eliminar una persona: DELETE /api/persona/delete/{id}/
++ Eliminar Notas: http://127.0.0.1:8000/api/notas/delete/{id}/
 
-+ Contar el total de personas: GET /api/persona/count/
++ Eliminar documentos : http://127.0.0.1:8000/api/documentos/delete/{id}/
 
-+ Filtrar personas: GET /api/filter_personas/
++ Eliminar carpetas : http://127.0.0.1:8000/api/carpetas/delete/{id}/
 
-+ Buscar personas: GET /api/list_personas/
++ Eliminar etiquetas : http://127.0.0.1:8000/api/etiquetas/delete/{id}/
 
++ Actualizar Notas : http://127.0.0.1:8000/api/notas/update/{id}/
 
++ ActualizaR documentos : http://127.0.0.1:8000/api/documentos/update/{id}/
 
++ Actualizar carpetas : http://127.0.0.1:8000/api/carpetas/update/{id}/
 
++ Actualizar etiquetas : http://127.0.0.1:8000/api/etiquetas/update/{id}/
 
 
 
